@@ -20,10 +20,14 @@
             margin: 0 15px;
             color: #38bdf8;
             text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         section {
             padding: 40px;
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
         }
         h1, h2 {
@@ -34,6 +38,23 @@
             padding: 20px;
             margin: 20px 0;
             border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background: #38bdf8;
+            color: #020617;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #0ea5e9;
+        }
+        ul {
+            line-height: 1.8;
         }
         footer {
             text-align: center;
@@ -46,11 +67,13 @@
 
 <header>
     <h1>Evan Burns</h1>
-    <p>Aspiring Cybersecurity Professional</p>
+    <p>Aspiring Cybersecurity Professional | CompTIA Security+</p>
     <nav>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -58,32 +81,68 @@
 <section id="about">
     <h2>About Me</h2>
     <div class="card">
-        <p>I am an aspiring cybersecurity professional currently pursuing an Associate Degree in Cybersecurity and holding a CompTIA Security+ certification. I have strong analytical skills, attention to detail, and a passion for protecting systems and data integrity.</p>
+        <p>I am an aspiring cybersecurity professional currently pursuing an Associate Degree in Cybersecurity with a CompTIA Security+ certification. I am passionate about protecting systems, identifying vulnerabilities, and implementing secure solutions.</p>
+        <p>I have hands-on experience with network security, VPN configuration, and system administration through coursework and labs. I am actively building my skills in threat detection, ethical hacking fundamentals, and security best practices.</p>
+        <a href="#contact" class="btn">Contact Me</a>
     </div>
 </section>
 
 <section id="skills">
-    <h2>Skills & Certifications</h2>
+    <h2>Technical Skills & Certifications</h2>
     <div class="card">
         <ul>
-            <li>CompTIA Security+ Certified</li>
-            <li>Network Security Fundamentals</li>
-            <li>VPN Configuration</li>
-            <li>Windows Server Management</li>
-            <li>Risk Assessment & Threat Analysis</li>
+            <li><strong>Certifications:</strong> CompTIA Security+</li>
+            <li><strong>Networking:</strong> TCP/IP, DNS, DHCP, VPNs</li>
+            <li><strong>Security:</strong> Risk Assessment, Threat Analysis, Access Control</li>
+            <li><strong>Systems:</strong> Windows Server, Active Directory Basics</li>
+            <li><strong>Tools:</strong> Wireshark, Nmap (basic exposure)</li>
         </ul>
     </div>
 </section>
 
 <section id="projects">
     <h2>Projects</h2>
+
     <div class="card">
-        <h3>Secure VPN Setup</h3>
-        <p>Configured a secure VPN on a Windows Server to allow encrypted remote access to internal network resources.</p>
+        <h3>Secure VPN Configuration</h3>
+        <p><strong>Overview:</strong> Configured a VPN on a Windows Server to allow secure remote access.</p>
+        <p><strong>Key Skills:</strong> Encryption, Remote Access Security, Network Configuration</p>
+        <p><strong>Outcome:</strong> Successfully enabled secure communication between external users and internal resources.</p>
     </div>
+
     <div class="card">
         <h3>Network Security Design</h3>
-        <p>Developed a secure remote access solution including firewall configuration, VPN setup, and network diagram planning.</p>
+        <p><strong>Overview:</strong> Designed a secure remote access infrastructure including firewall and VPN setup.</p>
+        <p><strong>Key Skills:</strong> Network Architecture, Security Planning</p>
+        <p><strong>Outcome:</strong> Created a secure and scalable network design with documented layout.</p>
+    </div>
+
+    <div class="card">
+        <h3>Basic Network Scanning Lab</h3>
+        <p><strong>Overview:</strong> Performed network scans using Nmap to identify devices and open ports.</p>
+        <p><strong>Key Skills:</strong> Reconnaissance, Vulnerability Awareness</p>
+        <p><strong>Outcome:</strong> Gained insight into network exposure and potential risks.</p>
+    </div>
+
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+        <p><strong>Cybersecurity Student Labs</strong></p>
+        <ul>
+            <li>Configured secure networks and remote access solutions</li>
+            <li>Practiced vulnerability identification and mitigation techniques</li>
+            <li>Worked with Windows Server environments</li>
+        </ul>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="card">
+        <p><strong>Associate Degree in Cybersecurity (In Progress)</strong></p>
+        <p>Relevant Coursework: Network Security, Ethical Hacking Fundamentals, Systems Administration</p>
     </div>
 </section>
 
@@ -92,11 +151,12 @@
     <div class="card">
         <p>Email: EvanBurns0806@gmail.com</p>
         <p>Phone: (859) 739-1604</p>
+        <a href="#" class="btn">Download Resume (Add PDF Link)</a>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 Evan Burns</p>
+    <p>© 2026 Evan Burns | Cybersecurity Portfolio</p>
 </footer>
 
 </body>
